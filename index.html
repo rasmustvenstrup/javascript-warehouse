@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Warehouse</title>
+
+        
+
+    </head>
+    <body>
+
+        <div id="test"></div>
+        
+        <h1>Produkter</h1>
+        
+        <table id="productsTable"></table>
+
+        <script>
+            
+                if (localStorage.products)
+                {
+                    var products = JSON.parse(localStorage.products);
+    
+                    var rows = "<tr><th>Navn</th><th>Beskrivelse</th><th>Pris</th></tr>";
+                    
+                    products.forEach(element => {
+                        var row = "<tr><td>" + element.name + "</td><td>" + element.description + "</td><td>" + element.price + "</td></tr>";
+                        rows += row;
+                    });
+                    
+                    document.getElementById("productsTable").innerHTML = rows;
+                }
+                else {
+                    alert("No products");
+                }
+                
+            </script>
+
+    </body>
+
+</html>
