@@ -1,37 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            function saveProduct() {
-                
-                var products = [];
-                if (localStorage.products)
-                {
-                    products = JSON.parse(localStorage.products);
-                }
-
-
-                var name = document.getElementById("name").value;
-                var description = document.getElementById("description").value;
-                var price = document.getElementById("price").value;
-                
-                var product = {
-                    name: name,
-                    description: description,
-                    price: price
-                };
-
-                products.push(product);
-                localStorage.products = JSON.stringify(products);
-
-                document.getElementById("name").value = "";
-                document.getElementById("description").value  = "";
-                document.getElementById("price").value  = "";
-                alert("Produkt tilføjet")
-            }
-        </script>
+        <title>Varehus - Tilføj produkt</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="products.js"></script>
     </head>
     <body>
+        <h1>Tilføj produkt</h1>
         <table>
             <tr>
                 <td>Navn:</td>
