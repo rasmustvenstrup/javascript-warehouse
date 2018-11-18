@@ -1,0 +1,56 @@
+body {
+    font-family: Arial;
+    background: url("../images/wood.jpg");
+    background-size: cover;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+#menu {
+    background-color: white;
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px 0 black;
+    opacity: 0.8;
+    display: block;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: darkgoldenrod;
+}
+
+#content {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 50px;
+    width : 93%;    
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 0.8;
+    display: block;
+}

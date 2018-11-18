@@ -1,3 +1,9 @@
+$(document).ready(function(){
+
+    //$("#header").load("menu.html");
+
+});
+
 
 loadProducts();
 

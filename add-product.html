@@ -2,25 +2,29 @@
 <html>
     <head>
         <title>Varehus - Tilføj produkt</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="products.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="scripts/jquery-3.3.1.min.js"></script>
+        <script src="scripts/products.js"></script>
     </head>
     <body>
-        <h1>Tilføj produkt</h1>
-        <table>
-            <tr>
-                <td>Navn:</td>
-                <td><input type="text" id="name" /></td>
-            </tr>
-            <tr>
-                <td>Beskrivelse:</td>
-                <td><input type="text" id="description" /></td>
-            </tr>
-            <tr>
-                <td>Pris:</td>
-                <td><input type="text" id="price" /></td>
-            </tr>
-        </table>
-        <input type="button" value="Tilføj produkt" onclick="saveProduct()">
+        <div class="box">
+            <h1>Tilføj produkt</h1>
+            <table>
+                <tr>
+                    <td>Navn:</td>
+                    <td><input type="text" id="name" /></td>
+                </tr>
+                <tr>
+                    <td>Beskrivelse:</td>
+                    <td><input type="text" id="description" /></td>
+                </tr>
+                <tr>
+                    <td>Pris:</td>
+                    <td><input type="text" id="price" /></td>
+                </tr>
+            </table>
+            <br />
+            <input type="button" value="Tilføj produkt" onclick="saveProduct()">
+        </div>
     </body>
 </html>

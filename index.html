@@ -2,14 +2,24 @@
 <html>
     <head>
         <title>Varehus - Produkter</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>
-        <div class="warehouse">
-                <h1>Produkter</h1>
-                <table id="productsTable"></table>
-        
-                <script src="products.js"></script>
-        </div>
+            <!-- <div id="header" /> -->
+
+            <div id="menu">
+                <a href="index.html">Produkter</a>
+                <a href="add-product.html">Tilføj produkt</a>
+            </div>
+            
+            <div id="content">
+                <div class="box">
+                    <h1>Produkter</h1>
+                    <table id="productsTable"></table>
+                </div>
+            </div>
+            
+            <script src="scripts/jquery-3.3.1.min.js"></script>
+            <script src="scripts/products.js"></script>
     </body>
 </html>
